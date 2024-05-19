@@ -1,5 +1,6 @@
 # MineXLauncher
-a launcher with diff versions of Eagler
+a eagler launcher
+
 demo: https://speedslicer.github.io/MineXLauncher/
 
 feel free to contribute

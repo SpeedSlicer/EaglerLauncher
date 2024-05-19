@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 <li>EaglercraftX: Regular release (current version: U30).</li>
                                 <li>EaglerForge: Mod Support for Eagler</li>
                                 <li>EaglerL 1.9 Beta: Stable Eagler 1.9, fewer features, but ensured to work.</li>
-                                <li>EaglerL 1.9 Nightly: Unstable Eagler 1.9</li>
+                                <li>EaglerL 1.9 Unstable: Unstable Eagler 1.9</li>
                                 <li>Eaglercraft 1.5: Legacy</li>
                                 <li>Eaglercraft Beta 1.3: OG</li>
                              </ul>`;

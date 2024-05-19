@@ -20,19 +20,71 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const loadInfo = () => {
-        content.innerHTML = `<h2>Welcome to the Game Launcher</h2>
-                             <p>Select a client from the dropdown below to launch the game.</p>
-                             <h3>Clients</h3>
+        content.innerHTML = `
+
                              <ul>
                                 <li>EaglercraftX: Regular release (current version: U30).</li>
                                 <li>EaglerForge: Mod Support for Eagler</li>
                                 <li>EaglerL 1.9 Beta: Stable Eagler 1.9, fewer features, but ensured to work.</li>
-                                <li>EaglerL 1.9 Nightly: Unstable Eagler 1.9</li>
+                                <li>EaglerL 1.9 Unstable: Unstable Eagler 1.9</li>
                                 <li>Eaglercraft 1.5: Legacy</li>
                                 <li>Eaglercraft Beta 1.3: OG</li>
                              </ul>`;
     };
 
+    const loadResourcePacks = () => {
+        content.innerHTML = `<div class="resource-packs">
+        <h2>Resource Packs</h2>
+                                <div class="pack">
+                                   <h2>Low Taper Fade</h2>
+                                    <a href="resourcepacks/lowtaperfade.zip" download>Download</a>
+                                </div>
+                                <div class="pack">
+                                    <h2>Cold Crystal</h2>
+                                    <a href="resourcepacks/coldcrystal.zip" download>Download</a>
+                                </div>
+                                <div class="pack">
+                                    <h2>Bomby X32</h2>
+                                    <a href="resourcepacks/bomby.zip" download>Download</a>
+                                </div>
+                                <div class="pack">
+                                    <h2>Nebula</h2>
+                                    <a href="resourcepacks/nebulapack.zip" download>Download</a>
+                                </div>
+                                <div class="pack">
+                                    <h2>Bluepack</h2>
+                                    <a href="resourcepacks/bluepack.zip" download>Download</a>
+                                </div>
+                                <!-- Add more packs as needed -->
+                             </div>`;
+    };
+    const loadOfflineDownloads = () => {
+        content.innerHTML = `<div class="resource-packs">
+                <h2>Offline Downloads</h2>
+
+                                <div class="pack">
+                                    <h2>EaglercraftX Offline Download</h2>
+                                    <a href="offlinedownload/offline_eagler.html" download>Download</a>
+                                </div>
+                                <div class="pack">
+                                    <h2>Eaglerforge</h2>
+                                    <a href="eaglerforge.html" download>Download</a>
+                                </div>
+                                <div class="pack">
+                                    <h2>Eagler 1.9</h2>
+                                    <a href="offlinedownload/eagler19.html" download>Download</a>
+                                </div>
+                                <div class="pack">
+                                    <h2>Eagler 1.5</h2>
+                                    <a href="eagler15.html" download>Download</a>
+                                </div>
+                                 <div class="pack">
+                                    <h2>Eaglercraft Beta 1.3</h2>
+                                    <a href="eaglerbeta13.html" download>Download</a>
+                                </div>
+                                <!-- Add more packs as needed -->
+                             </div>`;
+    };
     const loadRecentLaunches = () => {
         const recentLaunches = JSON.parse(localStorage.getItem('recentLaunches')) || [];
         recentLaunchesList.innerHTML = '';
@@ -83,6 +135,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const tab = button.getAttribute('data-tab');
             if (tab === 'home') loadHome();
             if (tab === 'info') loadInfo();
+            if (tab === 'resource') loadResourcePacks();
+            if (tab === 'offline') loadOfflineDownloads(); // Add this line
+// Add this line
         });
     });
 

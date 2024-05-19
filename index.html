@@ -4,18 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Launcher</title>
-    <link rel="stylesheet" href="styles.css?v=8">
+    <link rel="stylesheet" href="styles.css?v=5">
     <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
-    <script>document.addEventListener('DOMContentLoaded', function() {
-    // Set the scroll position of main and aside sections to the top
-    const mainContent = document.getElementById('content');
-    mainContent.scrollTop = 0;
-
-    const recentLaunchesList = document.getElementById('recentLaunchesList');
-    recentLaunchesList.scrollTop = 0;
-});</script>
     <div class="launcher">
         <header>
             <h1>MinecraftXLauncher</h1>
@@ -23,6 +15,9 @@
         <nav>
             <button class="tab-btn" data-tab="home">Home</button>
             <button class="tab-btn" data-tab="info">Info</button>
+            <button class="tab-btn" data-tab="resource">Resource Packs</button>
+            <button class="tab-btn" data-tab="offline">Offline Downloads</button> <!-- New button -->
+
         </nav>
         <div class="top-controls">
             <select id="clientSelect" aria-label="Select Client">
@@ -43,6 +38,6 @@
             <p>&copy; 2024 MinecraftXLauncher Project</p>
         </footer>
     </div>
-    <script src="script.js?v=14"></script>
+    <script src="script.js?v=9"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const recentLaunchesList = document.getElementById("recentLaunchesList");
 
     const clients = [
-        { name: "EaglercraftX Default (Version U30)", url: "u30_build/index.html" },
+        { name: "EaglercraftX Default (Version U31)", url: "u31_build/index.html" },
         { name: "Eaglerforge", url: "eaglerforge.html" },
         { name: "EaglercraftL 1.9 Beta", url: "eaglerlweb/index.html" },
         { name: "EaglerL 1.9 Unstable", url: "eaglerunstable/index.html" },

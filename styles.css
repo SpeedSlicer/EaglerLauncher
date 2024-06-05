@@ -177,3 +177,35 @@ footer {
     text-align: left; /* Left align list items */
 }
 
+/* Styles for the settings popup */
+.popup {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px; /* Adjust the spacing */
+}
+
+.popup-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.popup-content a {
+    color: black;
+    padding: 8px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.popup-content a:hover {
+    background-color: #ddd;
+}
+
+.popup:hover .popup-content {
+    display: block;
+}

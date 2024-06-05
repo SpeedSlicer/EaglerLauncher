@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+    display: flex; /* Make the nav flex container */
+    align-items: center; /* Center align items vertically */
+}
+
+nav .tab-btn {
+    display: inline-block;
+    background: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav .tab-btn:hover {
+    background: #666;
+}
+
+.settings-popup {
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Center align items vertically */
+    margin-left: auto; /* Move to the right */
+}
+
+.popup-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.popup-content a {
+    color: black;
+    padding: 8px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.popup-content a:hover {
+    background-color: #ddd;
+}
+
+.settings-popup:hover .popup-content {
+    display: block;
+}
+
+.main-content {
+    flex: 1; /* Fill remaining space */
+    padding: 20px;
+}
+
+.main-content h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    color: #666;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    nav .tab-btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    nav .tab-btn {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .main-content h2 {
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

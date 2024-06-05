@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const recentLaunchesList = document.getElementById("recentLaunchesList");
 
     const clients = [
-        { name: "EaglercraftX Default (Version U31)", url: "u31_build/index.html" },
+        { name: "EaglercraftX Default (Version U32) [STILL NEED TO UPDATE TEXTURES]", url: "u32_build/index.html" },
+
         { name: "Eaglerforge", url: "eaglerforge.html" },
         { name: "EaglercraftL 1.9 Beta", url: "eaglerlweb/index.html" },
         { name: "EaglerL 1.9 Unstable", url: "eaglerunstable/index.html" },
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         content.innerHTML = `
 
                              <ul>
-                                <li>EaglercraftX: Regular release (current version: U31).</li>
+                                <li>EaglercraftX: Regular release (current version: U32).</li>
                                 <li>EaglerForge: Mod Support for Eagler</li>
                                 <li>EaglerL 1.9 Beta: Stable Eagler 1.9, fewer features, but ensured to work.</li>
                                 <li>EaglerL 1.9 Unstable: Unstable Eagler 1.9</li>
